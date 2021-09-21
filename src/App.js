@@ -2,14 +2,16 @@ import React from "react";
 import { makeStyles } from "@mui/styles";
 import { CssBaseline } from "@mui/material";
 import Header from "./components/Header";
+import About from "./components/About";
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/2bg.jpg'})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/1bg.jpg'})`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed'
   }
 }));
 
@@ -20,6 +22,7 @@ export default function App() {
     <div className={classes.root}>
       <CssBaseline />
       <Header />
+      <About />
     </div>
   )
 }
