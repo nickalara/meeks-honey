@@ -21,7 +21,15 @@ const places = [
       "Meeks' Honey can be found at local retailers from Santa Rosa to Monterey, including Whole Foods, and is widely available withing Santa Cruz County specifically. Honey production has become an increasingly critical challenge over the years for several reasons, such as invasive species, worsening droughts, and habitat destruction. As such, availability, varieties, and pricing may vary.",
     imageUrl: process.env.PUBLIC_URL + '/../assets/meeks-honey-jars.jpg',
     time: 1500,
-    imageAlt: "Portrait of a young David Meeks."
+    imageAlt: "Jars of Meeks' Honey in a display box."
+  },
+  {
+    title: 'Contact Us',
+    description:
+      "If you are interested in contacting Meeks' Honey, please send an email to meekshoney@gmail.com",
+    imageUrl: process.env.PUBLIC_URL + '/../assets/2bg.jpg',
+    time: 1500,
+    imageAlt: "Decorative ensemble of various honey products."
   },
 ];
 

@@ -3,8 +3,6 @@ import { makeStyles } from "@mui/styles";
 import MediaCard from "./MediaCard";
 import places from "../static/places";
 import useWindowPosition from "../hook/useWindowPosition";
-import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
-import { Link as Scroll } from 'react-scroll';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -17,20 +15,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function About() {
+export default function WhereToFind() {
   const classes = useStyles();
   const checked = useWindowPosition('header');
 
   return (
-    <div className={classes.root} id="about">
-      <MediaCard place={places[0]} checked={checked} />
-      <MediaCard place={places[1]} checked={checked} />
-      <Scroll to="whereToFind" smooth={true}>
-        <ExpandMoreRoundedIcon
-          className={classes.iconColor}
-          style={{ fontSize: '4rem' }}
-        />
-      </Scroll>
+    <div className={classes.root} id="whereToFind">
+      <MediaCard place={places[2]} checked={checked} />
+      <MediaCard place={places[3]} checked={checked} />
     </div>
   );
 }

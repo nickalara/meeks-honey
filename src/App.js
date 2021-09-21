@@ -3,6 +3,8 @@ import { makeStyles } from "@mui/styles";
 import { CssBaseline } from "@mui/material";
 import Header from "./components/Header";
 import About from "./components/About";
+import WhereToFind from "./components/WhereToFind";
+import StickyFooter from "./components/StickyFooter";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,6 +25,8 @@ export default function App() {
       <CssBaseline />
       <Header />
       <About />
+      <WhereToFind />
+      <StickyFooter />
     </div>
   )
 }

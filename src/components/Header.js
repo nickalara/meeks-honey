@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 import { AppBar, Collapse, IconButton, Toolbar } from "@mui/material";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
-import { Link as Scroll } from 'react-scroll'
+import { Link as Scroll } from 'react-scroll';
 
 const useStyles = makeStyles((theme) => ({
   root: {
